@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walut</title>
+    <link href="style/style.css" rel="stylesheet" />
+    <script defer src="script/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form js-form">
+            <fieldset class="form__field">
+                <legend>Kalkulator walut</legend>
+                <p>
+                    <label>                    
+                        <input type="radio" class="js-dolar" name="waluta" checked>Dolar
+                    </label>
+                </p>
+                <p>
+                    <label>                    
+                        <input type="radio" class="js-euro" name="waluta">Euro
+                    </label>
+                </p>
+                <p>
+                    <label>                    
+                        <input type="radio" class="js-frank" name="waluta">Frank
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Kwota: <input type="number" class="js-sum" step="any" />
+                    </label>
+                </p>
+            </fieldset>
+            <p>
+                <button class="button">Przelicz</button>
+            </p>
+            <p>
+                <span class="currency"></span><span class="result1"> Dolar </span>= <span class="result2">N/A</span> złotych
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
