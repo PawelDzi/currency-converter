@@ -1,10 +1,16 @@
 html {
     box-sizing: border-box;
-    background-color: #575757;
 }
 
 *, ::after, ::before {
     box-sizing: inherit;
+}
+
+body {
+    background-color: #575757;
+    background-image: url("../background.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .form {

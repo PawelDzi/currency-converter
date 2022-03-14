@@ -12,38 +12,41 @@
 
 <body>
     <div class="container">
-        <form class="form js-form">
-            <fieldset class="form__field">
-                <legend>Kalkulator walut</legend>
-                <p>
-                    <label>                    
-                        <input type="radio" class="js-dolar" name="waluta" checked>Dolar
-                    </label>
-                </p>
-                <p>
-                    <label>                    
-                        <input type="radio" class="js-euro" name="waluta">Euro
-                    </label>
-                </p>
-                <p>
-                    <label>                    
-                        <input type="radio" class="js-frank" name="waluta">Frank
-                    </label>
-                </p>
+        <div class="background">
+            <form class="form js-form">
+                <fieldset class="form__field">
+                    <legend>Kalkulator walut</legend>
+                    <p>
+                        <label>
+                            <input type="radio" class="js-dolar" name="waluta" checked>Dolar
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" class="js-euro" name="waluta">Euro
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" class="js-frank" name="waluta">Frank
+                        </label>
+                    </p>
 
+                    <p>
+                        <label>
+                            Kwota: <input type="number" class="js-sum" step="any" />
+                        </label>
+                    </p>
+                </fieldset>
                 <p>
-                    <label>
-                        Kwota: <input type="number" class="js-sum" step="any" />
-                    </label>
+                    <button class="button">Przelicz</button>
                 </p>
-            </fieldset>
-            <p>
-                <button class="button">Przelicz</button>
-            </p>
-            <p>
-                <span class="currency"></span><span class="result1"> Dolar </span>= <span class="result2">N/A</span> złotych
-            </p>
-        </form>
+                <p>
+                    <span class="currency"></span><span class="result1"> Dolar </span>= <span class="result2">N/A</span>
+                    złotych
+                </p>
+            </form>
+        </div>
     </div>
 </body>
 
