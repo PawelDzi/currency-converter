@@ -17,22 +17,22 @@ formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
     let result;
-    let sumval = sum.value;
+    let sumCurrency = sum.value;
 
     if (document.querySelector(".js-euro").checked == true) {
-        result = sumval * formEuro;
+        result = sumCurrency * formEuro;
         result1.innerText = " Euro ";
     }
 
     else if (document.querySelector(".js-dolar").checked == true) {
-        result = sumval * formDolar;
+        result = sumCurrency * formDolar;
         result1.innerText = " Dolar ";
     }
     else if (document.querySelector(".js-frank").checked == true) {
-        result = sumval * formFrank;
+        result = sumCurrency * formFrank;
         result1.innerText = " Frank ";
     }
 
-    currency.innerText = sumval;
+    currency.innerText = sumCurrency;
     result2.innerText = result.toFixed(2);
 });
