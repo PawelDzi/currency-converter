@@ -12,16 +12,16 @@
         const formDolar = 4.48;
         const formFrank = 4.88;
 
-        if (document.querySelector(".js-euro").checked == true) {
+        if (document.querySelector(".js-euro").checked) {
             result = sumCurrency * formEuro;
             result1.innerText = " Euro ";
         }
 
-        else if (document.querySelector(".js-dolar").checked == true) {
+        else if (document.querySelector(".js-dolar").checked) {
             result = sumCurrency * formDolar;
             result1.innerText = " Dolar ";
         }
-        else if (document.querySelector(".js-frank").checked == true) {
+        else if (document.querySelector(".js-frank").checked) {
             result = sumCurrency * formFrank;
             result1.innerText = " Frank ";
         }
